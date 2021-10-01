@@ -26,20 +26,21 @@
             </nav> 
                 <ul class="list-contacts">
                     <li class="item-contacts">
-                        <a class="button-contacts" href="mailto:info@devstudio.com"> 
+                        <a class="button-contacts" href="mailto:info@devstudio.com">
                             <svg class="button-svg" width=16px height=12px>
                                 <use href="./images/icon/icons.svg#icon-envelope"></use>
                             </svg>
-                        </a>
-                        <a class="header-contacts" href="mailto:info@devstudio.com"> info@devstudio.com </a>
+                        <span class="contacts-info">info@devstudio.com</span> 
+                    </a>                        
                     </li>
                     <li class="item-contacts">
                         <a class="button-contacts" href="tel:+380961111111">
                             <svg class="button-svg" width=10px height=16px>
                                 <use href="./images/icon/icons.svg#icon-smartphone"></use>
                             </svg>
+                            <span class="contacts-info">+38 096 111 11 11</span>
                         </a>
-                        <a class="header-contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    </li>
                 </ul>
         </div>
            
@@ -50,8 +51,8 @@
     <main>
 
     <!--Service order section-->
-        <section class="services-section">
-            <div class="overlay container">
+        <section class="services-section overlay">
+            <div class="container">
                            
             <h1 class="services-head">Эффективные решения для вашего бизнеса</h1>
             <button class="services-button" type="button">Заказать услугу</button>
@@ -64,38 +65,38 @@
             <h2 class="hidden">Преимущества</h2>
                 <ul class="characteristics-list">
                     <li class="item">
-                        <button class="characteristics-button">
-                            <svg class="characteristics-svg" width=270px height=120px>
+                        <div class="characteristics-button">
+                            <svg class="characteristics-svg" width=70px height=70px>
                                 <use href="./images/icon/icons.svg#icon-antenna"></use>
                             </svg>
-                        </button>
+                        </div>
                         <h3 class="characteristics-head">Внимание к деталям</h3>
                         <p class="characteristics-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
                     <li class="item">
-                        <button class="characteristics-button">
-                            <svg class="characteristics-svg" width=270px height=120px>
+                        <div class="characteristics-button">
+                            <svg class="characteristics-svg" width=70px height=70px>
                                 <use href="./images/icon/icons.svg#icon-clock"></use>
                             </svg>
-                        </button>
+                        </div>
                         <h3 class="characteristics-head">Пунктуальность</h3>
                         <p class="characteristics-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
                     <li class="item">
-                        <button class="characteristics-button">
-                            <svg class="characteristics-svg" width=270px height=120px>
-                                <use href="./images/icon/icons.svg#icon-diagramma"></use>
+                        <div class="characteristics-button">
+                            <svg class="characteristics-svg" width=70px height=70px>
+                                <use href="./images/icon/icons.svg#icon-diagram"></use>
                             </svg>
-                        </button>
+                        </div>
                         <h3 class="characteristics-head">Планирование</h3>
                         <p class="characteristics-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
                     <li class="item">
-                        <button class="characteristics-button">
-                            <svg class="characteristics-svg" width=270px height=120px>
-                                <use href="./images/icon/icons.svg#icon-astronavt"></use>
+                        <div class="characteristics-button">
+                            <svg class="characteristics-svg" width=70px height=70px>
+                                <use href="./images/icon/icons.svg#icon-astronaut"></use>
                             </svg>
-                        </button>
+                        </div>
                         <h3 class="characteristics-head">Современные технологии</h3>
                         <p class="characteristics-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
@@ -276,48 +277,49 @@
                 </ul>
             </div>
         </section>
+<!--Regular customer section-->
         <section class="customers-section">
             <div class="regular-customers container">
                 <h2 class="customers-head">Постоянные клиенты</h2>
                 <ul class="customers-list">
-                    <li>
-                        <a href="" > <p class="hidden">YA & CO</p> 
-                            <svg class="customers-svg" width=170px height=92px>
-                                <use href="./images/icon/icons.svg#icon-client1"></use>
+                    <li class="customers-link">
+                        <a href="" > 
+                            <svg class="customers-svg" width=106px height=60px>
+                                <use href="./images/icon/icons.svg#icon-client"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
-                        <a href=""> <p class="hidden">Company Tagline Here</p>
-                            <svg class="customers-svg" width=170px height=92px>
+                    <li class="customers-link">
+                        <a href=""> 
+                            <svg class="customers-svg" width=106px height=60px>
                             <use href="./images/icon/icons.svg#icon-client2"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
-                        <a href=""><p class="hidden">Company</p>
-                            <svg class="customers-svg" width=170px height=92px>
+                    <li class="customers-link">
+                        <a href="">
+                            <svg class="customers-svg" width=106px height=60px>
                                 <use href="./images/icon/icons.svg#icon-client3"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
-                        <a href=""><p class="hidden">Foster Peters</p>
-                            <svg class="customers-svg" width=170px height=92px>
+                    <li class="customers-link">
+                        <a href="">
+                            <svg class="customers-svg" width=106px height=60px>
                                 <use href="./images/icon/icons.svg#icon-client4"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
-                        <a href=""><p class="hidden">Brand</p>
-                            <svg class="customers-svg" width=170px height=92px>
+                    <li class="customers-link">
+                        <a href="">
+                            <svg class="customers-svg" width=106px height=60px>
                                 <use href="./images/icon/icons.svg#icon-client5"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
-                        <a href=""><p class="hidden">Company Tag Line</p>
-                            <svg class="customers-svg" width=170px height=92px>
+                    <li class="customers-link">
+                        <a href="">
+                            <svg class="customers-svg" width=106px height=60px>
                                 <use href="./images/icon/icons.svg#icon-client6"></use>
                             </svg>
                         </a>

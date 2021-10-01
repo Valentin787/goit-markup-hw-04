@@ -42,10 +42,8 @@ a{
 }
 .overlay{
     max-width: 1600px;
-    height: 600px;
+
  
-    margin-right: auto;
-    margin-left: auto;
     background-image: linear-gradient(to right,
      rgba(47, 48, 58, 0.4),
      rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
@@ -203,23 +201,28 @@ h3{
 
     .button-contacts{
         border: none;
+        cursor: pointer;
         background-color: var(--primary-color);
         fill:var(--primary-text) ;
-        padding: 10px;
+        
     }
     .button-contacts:hover{
         fill: var(--accent-text);
+        
     }
-
+    .contacts-info{
+         color:var(--primary-text);
+         padding: 10px;
+    }
+    .contacts-info:hover{
+        color: var(--accent-text);
+    }
 
 /*Main section*/
     .button-link{
         padding: 94px 0;
     }
-    .link-section .container{
-        padding-left: 0px;
-        padding-right: 0px;
-    }
+
     .button-list{
         display: flex;
         justify-content: center;
@@ -269,9 +272,12 @@ h3{
 
         background:var(--primary-color);
         border: 1px solid var(--border-color);  
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
         
         width: 370px;
+    }
+    .card:hover{
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
     .card:nth-child(3n){
         margin-right: 0px;
@@ -305,19 +311,15 @@ h3{
 
     .footer-section{
         background-color: var(--footer-background);
-
+        padding: 60px 0;
     }   
     .footer-nav{
-        padding: 60px 0;
         display: flex;
+        align-items: baseline;
     }
-    .double-nav{
-        display: inline;
-        margin-top: 60px;
-    }
+
     .footer-social{
         margin-left: 70px;
-        margin-top: 72px;
     }
 
     .logo-footer{
@@ -329,9 +331,7 @@ h3{
         letter-spacing: 0.03em;
   
     }
-    .logo-footer:hover{
-        color: var(--accent-text);
-    }
+
     .logo-footer:focus{
         color: var(--accent-text);
     }
@@ -400,17 +400,15 @@ h3{
 /*Studio html*/
     .services-section{
         margin: 0 auto;
-        
-        color: var(--footer-text);
         text-align: center;
-
+        padding: 200px;
     }
 
     .services-head{
        
         display: block;
         margin:0 auto ;
-        padding-top: 200px;
+        
         width: 696px;
         font-weight: 900;
         font-size: 44px;
@@ -456,7 +454,6 @@ h3{
 
 
     .characteristics-list{
-        margin-bottom: 0px;
         display: flex;
         align-items: center;
     }
@@ -465,6 +462,11 @@ h3{
         background-color: var(--button-color);
         border: none;
         border-radius: 4px;
+        width: 270px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .characteristics-text{
         font-family: Roboto;
@@ -632,14 +634,24 @@ h3{
         display: flex;
         justify-content: space-around;
     }
-
-    .customers-svg{
-        fill: var(--social-link);
+    .customers-link{
+        width:170px ;
+        height: 92px;
         border: 1px solid var(--social-link);
         border-radius: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .customers-link:hover{
+        border-color: var(--accent-text);
+    }
+    .customers-svg{
+        fill: var(--social-link);
+
     }
     .customers-svg:hover{
         fill: var(--accent-text);
-        border-color: var(--accent-text);
+
     }
 /* Footer section*/
