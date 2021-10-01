@@ -200,23 +200,29 @@ h3{
     }
 
     .button-contacts{
-        border: none;
-        cursor: pointer;
+        display: flex;
+        align-items: center;      
         background-color: var(--primary-color);
         fill:var(--primary-text) ;
+        color: var(--accent-text);
+        color:var(--primary-text);
+        padding: 10px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        
         
     }
     .button-contacts:hover{
         fill: var(--accent-text);
+        color: var(--accent-text);
         
     }
-    .contacts-info{
-         color:var(--primary-text);
-         padding: 10px;
+    .button-svg{
+        margin-right: 10px;
     }
-    .contacts-info:hover{
-        color: var(--accent-text);
-    }
+
 
 /*Main section*/
     .button-link{
@@ -252,7 +258,7 @@ h3{
     }
     .main-button:hover{
         background-color: var(--accent-text);
-        color: var(--footer-text);   
+        color: var(--primary-color);   
     }
     .main-button:focus{
         background-color: var(--accent-text);
@@ -592,7 +598,7 @@ h3{
         padding: 12px;
         border: none;
         cursor: pointer;
-        background-color: var(--primary-color);
+        fill: var(--social-link);
         margin: 0;
         border-radius: 50%;
        
@@ -608,13 +614,8 @@ h3{
         fill: var(--primary-color);
         background-color: var(--background-button);
     }
-    .social-svg{
-        fill: var(--social-link);
-    }
-    .social-svg:hover{
-        fill: var(--primary-color);
-        background-color: var(--background-button);
-    }
+
+
 /*Customers section*/
     .regular-customers{
     margin: 94px auto;
@@ -638,6 +639,7 @@ h3{
         width:170px ;
         height: 92px;
         border: 1px solid var(--social-link);
+        fill: var(--social-link);
         border-radius: 1px;
         display: flex;
         align-items: center;
@@ -645,13 +647,7 @@ h3{
     }
     .customers-link:hover{
         border-color: var(--accent-text);
-    }
-    .customers-svg{
-        fill: var(--social-link);
-
-    }
-    .customers-svg:hover{
         fill: var(--accent-text);
-
     }
+
 /* Footer section*/
